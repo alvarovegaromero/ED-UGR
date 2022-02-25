@@ -1,0 +1,313 @@
+\hypertarget{classImagen}{}\section{Imagen Class Reference}
+\label{classImagen}\index{Imagen@{Imagen}}
+
+
+T.\+D.\+A. \hyperlink{classImagen}{Imagen}.  
+
+
+
+
+{\ttfamily \#include $<$Imagen.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{classImagen_ab2e649aa7a105155c7bfdb846abf0528}{Imagen} ()
+\begin{DoxyCompactList}\small\item\em Constructor por defecto de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classImagen_a70437d2848ae5b030ee17cf79651a8b5}{Imagen} (const \hyperlink{classImagen}{Imagen} \&J)
+\begin{DoxyCompactList}\small\item\em Constructor de copia de la clase. \end{DoxyCompactList}\item 
+\hyperlink{classImagen_a9b34329ba89308633e8a8fe5627b50dc}{Imagen} (int nfilas, int ncols)
+\begin{DoxyCompactList}\small\item\em Constructor con parámetro de la clase. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{classImagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}\label{classImagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}} 
+\hyperlink{classImagen_a03dd93c9cf920a9dc0b72f8bd34f2e8a}{$\sim$\+Imagen} ()
+\begin{DoxyCompactList}\small\item\em Destructor de la clase. \end{DoxyCompactList}\item 
+int \hyperlink{classImagen_a4cb4faa04f5e2913965e43a6a65acfd1}{num\+\_\+filas} () const
+\begin{DoxyCompactList}\small\item\em Consultor del número de filas de la imagen. \end{DoxyCompactList}\item 
+int \hyperlink{classImagen_ac28d55c18064aea2a65e6fcf51d86191}{num\+\_\+columnas} () const
+\begin{DoxyCompactList}\small\item\em Consultor del número de columnass de la imagen. \end{DoxyCompactList}\item 
+void \hyperlink{classImagen_abe7e36244d80a6ed5ebf952c557203d3}{asigna\+\_\+pixel} (int fila, int col, unsigned char valor)
+\begin{DoxyCompactList}\small\item\em Cambia el valor de un determinado píxel. \end{DoxyCompactList}\item 
+byte \hyperlink{classImagen_a7d9378695a7fd2dce8092f180e716229}{valor\+\_\+pixel} (int fila, int col) const
+\begin{DoxyCompactList}\small\item\em Cambia el valor de un determinado píxel. \end{DoxyCompactList}\item 
+string \hyperlink{classImagen_a258fbb5b40592cc96bcdf6ddda578b8d}{To\+String} ()
+\begin{DoxyCompactList}\small\item\em Método para visualizar el contenido de la matriz. \end{DoxyCompactList}\item 
+void \hyperlink{classImagen_a662dc0df56563c90691f17101308fcd2}{umbralizar} (byte T1, byte T2)
+\begin{DoxyCompactList}\small\item\em Método para umbralizar una imagen en función de dos extremos. \end{DoxyCompactList}\item 
+\hyperlink{classImagen}{Imagen} \hyperlink{classImagen_a5f5af297229cd4dd7878d3cabdfda7b2}{Zoom\+Porcion} (int x1, int y1, int x2, int y2)
+\begin{DoxyCompactList}\small\item\em Hace zoom sobre una porción de una imagen. \end{DoxyCompactList}\item 
+\hyperlink{classImagen}{Imagen} \hyperlink{classImagen_abd0add1ed131388d72d46446bdfb594c}{Icono} (int nf, int nc)
+\begin{DoxyCompactList}\small\item\em Hace zoom sobre una porción de una imagen. \end{DoxyCompactList}\item 
+void \hyperlink{classImagen_ab32cdcc580797003ba6d1cf0a8affd9a}{constrastar} (byte min, byte max)
+\begin{DoxyCompactList}\small\item\em Aumenta el constraste de una foto mediante una transformación lineal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+T.\+D.\+A. \hyperlink{classImagen}{Imagen}. 
+
+Una instancia {\itshape c} del tipo de datos abstracto {\ttfamily \hyperlink{classImagen}{Imagen}} es una imagen de niveles de grises formada por dos valores indicando las filas y columnas de una matriz en la que cada celda (o mejor dicho píxel)
+
+\begin{DoxyAuthor}{Author}
+Álvaro Vega Romero 
+\end{DoxyAuthor}
+\begin{DoxyDate}{Date}
+20/10/2020 
+\end{DoxyDate}
+
+
+\subsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classImagen_ab2e649aa7a105155c7bfdb846abf0528}\label{classImagen_ab2e649aa7a105155c7bfdb846abf0528}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [1/3]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Constructor por defecto de la clase. 
+
+\begin{DoxyReturn}{Returns}
+Crea un objeto con 0 filas y columnas y sin iniciailizar 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_a70437d2848ae5b030ee17cf79651a8b5}\label{classImagen_a70437d2848ae5b030ee17cf79651a8b5}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [2/3]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}\item[{const \hyperlink{classImagen}{Imagen} \&}]{J }\end{DoxyParamCaption})}
+
+
+
+Constructor de copia de la clase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em J} & un objeto de la clase \hyperlink{classImagen}{Imagen} \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un objeto con la misma matriz que J 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_a9b34329ba89308633e8a8fe5627b50dc}\label{classImagen_a9b34329ba89308633e8a8fe5627b50dc}} 
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\index{Imagen@{Imagen}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{Imagen()}{Imagen()}\hspace{0.1cm}{\footnotesize\ttfamily [3/3]}}
+{\footnotesize\ttfamily Imagen\+::\+Imagen (\begin{DoxyParamCaption}\item[{int}]{nfilas,  }\item[{int}]{ncols }\end{DoxyParamCaption})}
+
+
+
+Constructor con parámetro de la clase. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em filas,el} & número de filas de la matriz \\
+\hline
+{\em cols,el} & número de columnas de la matriz \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Un objeto con la misma matriz que J 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+filas $>$ 0 y cols $>$ 0 
+\end{DoxyPrecond}
+
+
+\subsection{Member Function Documentation}
+\mbox{\Hypertarget{classImagen_abe7e36244d80a6ed5ebf952c557203d3}\label{classImagen_abe7e36244d80a6ed5ebf952c557203d3}} 
+\index{Imagen@{Imagen}!asigna\+\_\+pixel@{asigna\+\_\+pixel}}
+\index{asigna\+\_\+pixel@{asigna\+\_\+pixel}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{asigna\+\_\+pixel()}{asigna\_pixel()}}
+{\footnotesize\ttfamily void Imagen\+::asigna\+\_\+pixel (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{col,  }\item[{unsigned char}]{valor }\end{DoxyParamCaption})}
+
+
+
+Cambia el valor de un determinado píxel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fila,la} & fila del pixel \\
+\hline
+{\em col,la} & columna del pixel \\
+\hline
+{\em valor,el} & nivel de gris que se quiere poner en el píxel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+0 $<$= fila $<$ \hyperlink{classImagen_a4cb4faa04f5e2913965e43a6a65acfd1}{num\+\_\+filas()} 
+
+0 $<$= cols $<$ \hyperlink{classImagen_ac28d55c18064aea2a65e6fcf51d86191}{num\+\_\+columnas()} 
+
+
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classImagen_ab32cdcc580797003ba6d1cf0a8affd9a}\label{classImagen_ab32cdcc580797003ba6d1cf0a8affd9a}} 
+\index{Imagen@{Imagen}!constrastar@{constrastar}}
+\index{constrastar@{constrastar}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{constrastar()}{constrastar()}}
+{\footnotesize\ttfamily void Imagen\+::constrastar (\begin{DoxyParamCaption}\item[{byte}]{min,  }\item[{byte}]{max }\end{DoxyParamCaption})}
+
+
+
+Aumenta el constraste de una foto mediante una transformación lineal. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em min,el} & valor min del rango \\
+\hline
+{\em max,el} & valor max del rango \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+min $<$= max 
+
+La imagen dispone de más un nivel de grises 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classImagen_abd0add1ed131388d72d46446bdfb594c}\label{classImagen_abd0add1ed131388d72d46446bdfb594c}} 
+\index{Imagen@{Imagen}!Icono@{Icono}}
+\index{Icono@{Icono}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{Icono()}{Icono()}}
+{\footnotesize\ttfamily \hyperlink{classImagen}{Imagen} Imagen\+::\+Icono (\begin{DoxyParamCaption}\item[{int}]{nf,  }\item[{int}]{nc }\end{DoxyParamCaption})}
+
+
+
+Hace zoom sobre una porción de una imagen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1,la} & fila de inicio \\
+\hline
+{\em y1,la} & columna de inicio \\
+\hline
+{\em nf,el} & num de filas del icono \\
+\hline
+{\em nc,el} & num de columans del icono \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objeto de la clase imagen al cual se le aplicó el zoom 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+nf $<$= filas\+\_\+origianales 
+
+nc $<$= columnas originales 
+
+nf y nc $>$ 0 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classImagen_ac28d55c18064aea2a65e6fcf51d86191}\label{classImagen_ac28d55c18064aea2a65e6fcf51d86191}} 
+\index{Imagen@{Imagen}!num\+\_\+columnas@{num\+\_\+columnas}}
+\index{num\+\_\+columnas@{num\+\_\+columnas}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{num\+\_\+columnas()}{num\_columnas()}}
+{\footnotesize\ttfamily int Imagen\+::num\+\_\+columnas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor del número de columnass de la imagen. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve un entero con el número 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_a4cb4faa04f5e2913965e43a6a65acfd1}\label{classImagen_a4cb4faa04f5e2913965e43a6a65acfd1}} 
+\index{Imagen@{Imagen}!num\+\_\+filas@{num\+\_\+filas}}
+\index{num\+\_\+filas@{num\+\_\+filas}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{num\+\_\+filas()}{num\_filas()}}
+{\footnotesize\ttfamily int Imagen\+::num\+\_\+filas (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const}
+
+
+
+Consultor del número de filas de la imagen. 
+
+\begin{DoxyReturn}{Returns}
+Devuelve un entero con el número 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_a258fbb5b40592cc96bcdf6ddda578b8d}\label{classImagen_a258fbb5b40592cc96bcdf6ddda578b8d}} 
+\index{Imagen@{Imagen}!To\+String@{To\+String}}
+\index{To\+String@{To\+String}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{To\+String()}{ToString()}}
+{\footnotesize\ttfamily string Imagen\+::\+To\+String (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+Método para visualizar el contenido de la matriz. 
+
+\begin{DoxyReturn}{Returns}
+Un string con el contenido de la matriz y las filas y columnas 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classImagen_a662dc0df56563c90691f17101308fcd2}\label{classImagen_a662dc0df56563c90691f17101308fcd2}} 
+\index{Imagen@{Imagen}!umbralizar@{umbralizar}}
+\index{umbralizar@{umbralizar}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{umbralizar()}{umbralizar()}}
+{\footnotesize\ttfamily void Imagen\+::umbralizar (\begin{DoxyParamCaption}\item[{byte}]{T1,  }\item[{byte}]{T2 }\end{DoxyParamCaption})}
+
+
+
+Método para umbralizar una imagen en función de dos extremos. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em T1,el} & extremos inferior para umbralizar \\
+\hline
+{\em T2,el} & extremo superior para umbralizar \\
+\hline
+\end{DoxyParams}
+\begin{DoxyPrecond}{Precondition}
+0 $<$ = T1 $<$= T2 $<$= 255 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classImagen_a7d9378695a7fd2dce8092f180e716229}\label{classImagen_a7d9378695a7fd2dce8092f180e716229}} 
+\index{Imagen@{Imagen}!valor\+\_\+pixel@{valor\+\_\+pixel}}
+\index{valor\+\_\+pixel@{valor\+\_\+pixel}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{valor\+\_\+pixel()}{valor\_pixel()}}
+{\footnotesize\ttfamily byte Imagen\+::valor\+\_\+pixel (\begin{DoxyParamCaption}\item[{int}]{fila,  }\item[{int}]{col }\end{DoxyParamCaption}) const}
+
+
+
+Cambia el valor de un determinado píxel. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em fila,la} & fila del pixel \\
+\hline
+{\em col,la} & columna del pixel \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+El valor correspondiente a ese pixel 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+0 $<$= fila $<$ \hyperlink{classImagen_a4cb4faa04f5e2913965e43a6a65acfd1}{num\+\_\+filas()} 
+
+0 $<$= cols $<$ \hyperlink{classImagen_ac28d55c18064aea2a65e6fcf51d86191}{num\+\_\+columnas()} 
+\end{DoxyPrecond}
+\mbox{\Hypertarget{classImagen_a5f5af297229cd4dd7878d3cabdfda7b2}\label{classImagen_a5f5af297229cd4dd7878d3cabdfda7b2}} 
+\index{Imagen@{Imagen}!Zoom\+Porcion@{Zoom\+Porcion}}
+\index{Zoom\+Porcion@{Zoom\+Porcion}!Imagen@{Imagen}}
+\subsubsection{\texorpdfstring{Zoom\+Porcion()}{ZoomPorcion()}}
+{\footnotesize\ttfamily \hyperlink{classImagen}{Imagen} Imagen\+::\+Zoom\+Porcion (\begin{DoxyParamCaption}\item[{int}]{x1,  }\item[{int}]{y1,  }\item[{int}]{x2,  }\item[{int}]{y2 }\end{DoxyParamCaption})}
+
+
+
+Hace zoom sobre una porción de una imagen. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em x1,la} & fila de inicio \\
+\hline
+{\em y1,la} & columna de inicio \\
+\hline
+{\em x2,la} & fila final \\
+\hline
+{\em y2,la} & columna final \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+un objeto de la clase imagen al cual se le aplicó el zoom 
+\end{DoxyReturn}
+\begin{DoxyPrecond}{Precondition}
+x1 $<$= x2 
+
+y1 $<$= y2 
+
+x1, x2, y1, y2 son posiciones de la imagen 
+\end{DoxyPrecond}
+
+
+The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+include/Imagen.\+h\end{DoxyCompactItemize}
